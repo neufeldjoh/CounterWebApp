@@ -26,18 +26,20 @@ public class BaseController {
 		// Spring uses InternalResourceViewResolver and return back index.jsp
 		return VIEW_INDEX;
 
+		
 	}
 
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 
+		//calculator hinzugefügt damit die JUnit Tests einen Sinn ergeben
 		calculator = new Calculator();
 		int par1 = Integer.parseInt(name);
 		int par2 = 1;
 		int result = calculator.sum(par1, par2);
 		String returnstring = Integer.toString(result);
 		
-		model.addAttribute("message", "Welcome " + name);
+		model.addAttribute("message", "Welcome " + returnstring);
 		model.addAttribute("counter", returnstring);
 		logger.debug("[welcomeName] counter : {}", returnstring);
 		return VIEW_INDEX;
