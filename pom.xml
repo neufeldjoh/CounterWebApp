@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mkyong</groupId>
@@ -76,20 +75,20 @@
 		<finalName>CounterWebApp</finalName>
 
 		<plugins>
-		    <!-- Eclipse project -->
+			<!-- Eclipse project -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
 				<configuration>
-				    <!-- Always download and attach dependencies source code -->
+					<!-- Always download and attach dependencies source code -->
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>false</downloadJavadocs>
 					<!-- mvn eclipse:eclipse -Dwtpversion=2.0 -->
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
-			
+
 			<!-- Set JDK Compiler Level -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -111,6 +110,13 @@
 				</configuration>
 			</plugin>
 
+			<!-- For JaCoCo -->
+			<plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.7.6-SNAPSHOT</version>
+			</plugin>
+			
 		</plugins>
 
 	</build>
