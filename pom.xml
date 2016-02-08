@@ -17,6 +17,14 @@
 	</properties>
 
 	<dependencies>
+	
+		<!-- TEST vulnerable lib  -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<version>1.50</version>
+		</dependency>
+
 
 		<!-- Unit Test -->
 		<dependency>
