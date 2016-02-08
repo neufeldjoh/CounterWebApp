@@ -32,7 +32,7 @@ public class BaseController {
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 
-		//calculator hinzugefügt damit die JUnit Tests einen Sinn ergeben
+		//calculator hinzugefuegt damit die JUnit Tests einen Sinn ergeben
 		calculator = new Calculator();
 		int par1 = Integer.parseInt(name);
 		int par2 = 1;
