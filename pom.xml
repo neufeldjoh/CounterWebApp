@@ -17,15 +17,6 @@
 	</properties>
 
 	<dependencies>
-	
-		<!-- TEST vulnerable lib  -->
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.2.2</version>
-		</dependency>
-
-
 
 		<!-- Unit Test -->
 		<dependency>
