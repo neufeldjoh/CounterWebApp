@@ -31,7 +31,7 @@ public class CalculatorTest {
 		assertEquals(7, result);
 	}
 	
-	@Ignore
+	//@Ignore
 	@Test
 	public void testSubstraction() {
 		int result = 10 - 3;
